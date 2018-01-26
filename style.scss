@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+$white: #ffffff;
+$green: #16a085;
+$grey: #373737;
+$back: #f5f6f7;
+$black: #000000;
+$green-light: #1abc9c;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Varela Round', sans-serif;
+	overflow-x: hidden;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.row::before, .row::after {
+	content: "";
+	display: table;
+}
+.row::after {
+	clear: both;
+}
+
+[class*="col-"] {
+	min-height: 1px;
+	float: left;
+	padding: 10px;
+}
+.btn {
+	font-size: 12px;
+	letter-spacing: 1.8px;
+	text-transform: uppercase;
+	font-weight: 700;
+	background-color: $green;
+	border-color: $green;
+	}
+
+.hero {
+	background: url('https://i.imgur.com/Wmsa8US.png');
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: $white;
+	height: 80vh;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	nav.navbar.navbar-expand-sm.navbar-dark {
+			color: white;
+	}
+	nav {
+		.navbar-toggler {
+			border-color: white;
+			.navbar-toggler-icon {
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+			}
+		}
+		#navbarSupportedContent {
+			.navbar-nav {
+				.nav-item {
+					.nav-link {
+						color: $white;
+						font-size: 16px;
+						font-weight: 700;
+						line-height: 100px;
+						text-transform: uppercase;
+						letter-spacing: 2.4px;
+						text-decoration: none;
+						margin: 3vw;
+						&:hover {
+							color: $green;
+						}
+						img {
+							color: $white;
+							margin-top: -10px;
+						}
+					}
+				}
+			}
+		}
+	}
+	h2 {
+		font-size: 36px;	
+		text-transform: uppercase;
+		font-weight: 700;
+		letter-spacing: 5.4px;
+		padding-top: 10vh;
+		margin-bottom: 3vh;
+		small {
+			font-size: 16px;
+			font-weight: 500;
+			letter-spacing: 2.4px;
+			display: block;
+			text-transform: lowercase;
+			padding-top: 1vh;
+		}
+	}
+	.btn-success {
+		padding: 20px 30px;
+		&:hover {
+			background-color: $white;
+			color: $green;
+			border: 1px solid;
+			letter-spacing: 2.0px;
+			font-weight: 900;
+		}
+	}
+	.icons {
+		margin-bottom: 1%;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		left: 50%;
+		top: 95%;
+			i {
+				font-size: 22px;
+				padding: 5px;
+		}
+	}
+}
+.get-started {
+	background-color: $back;
+	padding-top: 8vh;
+	h3 {
+		color: $green;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.7px;
+		margin-bottom: 5vh;
+		margin-top: 5vh;
+	}
+	p {
+		color: $grey;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 2.5px;
+		line-height: 24px;
+	}
+	.btn {
+		margin-top: 2vh;
+		padding: 20px 40px;
+		&:hover {
+			background-color: $white;
+			color: $green;
+			border: 1px solid;
+			letter-spacing: 2.0px;
+			font-weight: 900;
+		}
+	}
+	.photo-view {
+		padding-bottom: 0;
+		margin-bottom: -2px;
+		img {
+			padding-bottom: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+.design {
+	height: 60vh;
+	overflow: hidden;
+	.iphone-flat {
+		img {
+			margin-top: 10vh;
+		}
+	}
+	.carousel-caption {
+		left: 550px;
+		bottom: 33vh;
+		h4 {
+			font-size: 12px;
+			text-transform: uppercase;
+			line-height: 22px;
+			letter-spacing: 1.8px;
+			font-weight: 700;
+			margin: 0;
+			color: $black;
+			position: absolute;
+		}
+	}
+	col.right {
+		position: relative;
+	}
+	h3 {
+		color: $green;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.7px;
+		margin-bottom: 4vh;
+		margin-top: 10vh;
+	}
+	p {
+		color: $grey;
+		font-size: 12px;
+		font-weight: 500;
+		letter-spacing: 2.5px;
+		line-height: 24px;
+	}
+	.btn {
+		margin-top: 2vh;
+		margin-bottom: 1vh;
+		padding: 20px 50px;
+		&:hover {
+			background-color: $white;
+			color: $green;
+			border: 1px solid;
+			letter-spacing: 2.0px;
+			font-weight: 900;
+		}
+	}
+	.carousel-control-prev {
+		padding-left: 0;
+		text-align: left;
+		margin-left: -3%;
+		.carousel-control-prev-icon {
+			background-image: none;
+			padding-top: 10vh;
+			.fa-angle-left {
+				color: $black;
+				font-size: 50px;
+			}
+		}
+	}
+	.carousel-control-next {
+		margin-right: 80%;
+		text-align: left;
+		.carousel-control-next-icon {
+			background-image: none;
+			padding-top: 10vh;
+			.fa-angle-right {
+				color: $black;
+				font-size: 50px;
+			}
+		}
+	}
+}
+.community {
+	background-color: $back;
+	padding-top: 15vh;
+	padding-bottom: 10vh;
+	.container {
+		.flex-row {
+			display: flex;
+			display: -webkit-flex;
+			justify-content: space-between;
+			padding-right: 0;
+			.info {
+				text-align: center;
+				margin-top: 2%;
+				margin-left: -8%;
+				margin-right: 5%;
+				padding: 0;
+				h3 {
+					color: $grey;
+					font-size: 20px;
+					font-weight: 700;
+					line-height: 20px;
+					text-transform: uppercase;
+					letter-spacing: 2.4px;
+					margin-top: 8%;
+					margin-bottom: 8%;
+				}
+				p {
+					color: $grey;
+					font-size: 12px;
+					font-weight: 600;
+					letter-spacing: 1.5px;
+					padding-right: 30%;
+					padding-left: 30%;
+				}
+			}
+			.photo-left {
+				margin-right: 10px;	
+			}
+			.photo-right {
+				margin-left: 10px;
+			}
+			.carousel-control-prev {
+				margin-top: -40%;
+				margin-left: 87%;
+				.carousel-control-prev-icon {
+					background-image: none;
+					.fa-angle-left {
+						color: $black;
+						font-size: 40px;
+					}
+				}
+			}
+			.carousel-control-next {
+				margin-top: -40%;
+				margin-right: -6%;
+				.carousel-control-next-icon {
+					background-image: none;
+					.fa-angle-right {
+						color: $black;
+						font-size: 40px;
+					}
+				}
+			}
+		}
+	}
+}
+.jumbotron {
+	background: url('https://i.imgur.com/32Jtuos.png') center/cover no-repeat;
+	text-align: center;
+	height: 90vh;
+	margin: 0;
+	h1 {
+		color: $white;
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 24px;
+		letter-spacing: 3.6px;
+		margin-bottom: 3vh;
+		margin-top: 35vh;
+	}
+	.form {
+		display: inline;
+		width: 400px;
+		height: 59px;
+		#exampleInputEmail {
+			font-size: 16px;
+			width: 280px;
+			height: 60px;
+			color: $grey;
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 2.4px;
+			padding-left: 20px;
+			padding-top: 5px;
+			margin: 0 auto;
+			display: inline;
+			border-radius: 3px 0 0 3px;
+			&:hover {
+				border-color: $green;
+				color: $green;
+			}	
+		}
+		.btn-sm {
+			width: 63px;
+			height: 60px;
+			border-radius: 0 3px 3px 0;
+			border-color: $green;
+			display: inline;
+			padding-top: 5px;
+			&:hover {
+				background-color: $white;
+				i {
+					color: $green;
+				}
+			}
+			i {
+				color: $white;
+				font-size: 30px;
+			}
+		}
+	}
+}
+.download {
+	background-color: $back;
+	height: 50vh;
+	text-align: center;
+	padding-top: 10vh;
+	margin: 0 auto;
+	h3 {
+		color: $grey;
+		font-size: 20px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		margin: 0 auto;
+	}
+	p {
+		color: $grey;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 22px;
+		text-transform: uppercase;
+		letter-spacing: 1.8px;
+		padding-left: 15%;
+		padding-right: 15%;
+		margin-bottom: 6vh;
+		margin-top: 1vh;
+	}
+	.store {
+		margin: 0 auto;
+		text-align: center;
+		width: auto;
+		.col {
+			padding-left: 0;
+			padding-right: 0;
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.btn-lg {
+		font-size: 14px;
+		width: 240px;
+		height: 56px;
+		text-align: left;
+		border-radius: 3px 0 0 3px;
+		padding-left: 20px;
+		padding-bottom: 1px;
+		padding-top: 2px;
+		background-color: $green-light;
+		border-color: $green-light;
+		margin-left: 0;
+		margin-right: -4px;
+		&:hover {
+			background-color: $white;
+			border-color: $green;
+			color: $green;
+		}
+	}
+	.btn-sm {
+		width: 56px;
+		height: 56px;
+		border-radius: 0 3px 3px 0;
+		margin-left: 0;
+		margin-right: 0;
+		border-color: $green;
+		&:hover {
+			background-color: $white;
+			border-color: $green-light;
+			i {
+				color: $green-light;
+			}
+		}
+	}
+	i {
+		color: $white;
+		font-size: 30px;
+	}
+}
+footer {
+	padding-top: 5vh;
+	padding-bottom: 3vh;
+	h5 {
+		color: $grey;
+		font-size: 14px;
+		font-weight: 700;
+		text-transform: uppercase;
+		letter-spacing: 2.1px;
+		cursor: pointer;
+		&:hover {
+			color: $green;
+			span {
+				color: $grey;
+			}
+		}
+		span {
+			color: $green;
+		}
+	}
+	p {
+		color: $grey;
+		font-size: 14px;
+		font-weight: 700;
+		letter-spacing: 2.1px;
+		margin-top: 3vh;
+	}
+	img {
+		float: right;
+	}
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+	
+	.get-started {
+		padding-left: 5%;
+		padding-top: 6vh;
+		.btn-success {
+			margin-bottom: 0;
+		}
+		.photo-view {
+			padding-bottom: 0;
+			margin-bottom: -2px;
+			img {
+				padding-bottom: 0;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.design {
+		height: 70vh;
+	}
+	.community {
+		padding-top: 10vh;
+		padding-bottom: 10vh;
+		.container {
+			.flex-row {
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				padding-right: 0;
+				padding-left: 0;
+				.info {
+					text-align: center;
+					align-self: center;
+					margin-top: 2%;
+					margin-bottom: 5%;
+					margin-left: 0;
+					margin-right: 0;
+					padding: 0;
+					p {
+						padding-right: 20%;
+						padding-left: 20%;
+					}
+				}
+				.photo-left {
+					margin-right: 2px;
+					margin-left: 2px;
+				}
+				.photo-right {
+					margin-left: 2px;
+					margin-right: 2px;
+				}
+				.carousel-control-prev {
+					margin-top: -40%;
+					margin-left: 87%;
+					.carousel-control-prev-icon {
+						.fa-angle-left {
+							font-size: 40px;
+						}
+					}
+				}
+				.carousel-control-next {
+					margin-top: -40%;
+					margin-right: -6%;
+					.carousel-control-next-icon {
+						background-image: none;
+						.fa-angle-right {
+							color: $black;
+							font-size: 40px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.download {
+		height: auto;
+		min-height: 60vh;
+	}
+}
+
+@media (max-width: 767px) {
+    .hero {
+    	height: auto;
+    	h2 {
+    		line-height: 9vh;
+    		margin-top: 10vh;
+    		small {
+    			margin-top: 2vh;
+    		}
+    	}
+    	.btn-success {
+    		margin-bottom: 30%;
+    	}
+    }
+    .get-started {
+		padding-left: 5%;
+		padding-right: 5%;
+		height: auto;
+		overflow: hidden;
+		img {
+			margin-left: -40%;
+		}
+	}
+	.design {
+		margin: 5% 5%;
+		height: auto;
+		.iphone-flat {
+			img {
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+		.carousel-caption {
+			margin-right: -10vh;
+			z-index: 2;
+			position: relative;
+			bottom: 2vh;
+			h4 {
+				font-size: 12px;
+				text-transform: uppercase;
+				line-height: 22px;
+				letter-spacing: 1.8px;
+				font-weight: 700;
+				margin: 0;
+				color: $black;
+	
+			}
+		}
+		h3 {
+			margin-top: 10%;	
+		}
+		.carousel-control-prev-icon {
+			margin-bottom: 55vh;
+			margin-right: -110vw;
+		}
+		.carousel-control-next {
+			margin-right: 10vw;
+			.carousel-control-next-icon {
+				margin-bottom: 55vh;
+			}
+		}
+	}
+	.community {
+		height: auto;
+		padding-bottom: 10vh;
+		padding-top: 5vh;
+		overflow: hidden;
+		.container {
+			.flex-row {
+				display: flex;
+				display: -webkit-flex;
+				justify-content: center;
+				flex: wrap;
+				flex-direction: column;
+				padding-right: 10px;
+				padding-left: 10px;
+				.info {
+					text-align: center;
+					align-self: center;
+					margin-right: 0;
+					padding-right: 0;
+					margin-left: 0;
+					padding-left: 0;
+					h3 {
+						margin-top: 5%;
+						margin-bottom: 5%;
+					}
+					p {
+						padding-right: 10%;
+						padding-left: 10%;
+						padding-bottom: 5%;
+					}
+				}
+				.photo-left {
+					align-self: center;
+					margin: 0 auto;
+				}
+				.photo-right {
+					align-self: center;
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+	.jumbotron {
+		.form {
+			#exampleInputEmail {
+			width: 200px;
+			height: 50px;
+			}
+			.btn-lg {
+				font-size: 12px;
+				width: 200px;
+				height: 50px;
+			}
+			.btn-sm {
+				width: 50px;
+				height: 50px;
+			}
+		}
+	}
+	.download {
+		height: auto;
+		padding-bottom: 2vh;
+		.btn-lg {
+			width: 150px;
+			height: 50px;
+			margin-left: 5px;
+			margin-right: 5px;
+			margin: 0;
+			font-size: 12px;
+		}
+		.btn-sm {
+			width: 50px;
+			height: 50px;
+			margin-left: -5px;
+			font-size: 12px;
+			padding-top: 1px;
+		}
+	}
+}
+
+
